@@ -1,0 +1,57 @@
+div {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+}
+
+#box1 {
+	background-color: red;
+	transition: margin-top 1s ease-in-out;
+}
+
+.box1-animate {
+	margin-top: 100px;
+}
+
+#box2 {
+	background-color: blue;
+	animation: btwo 2s alternate 2;
+}
+
+@keyframes btwo {
+	0% {}
+	25% {background-color: lightblue;}
+	50% {background-color: purple;}
+	75% {background-color: violet;}
+	100% {background-color: red;
+		  margin-top: 100px;
+		  margin-left: 100px;}
+}
+
+#box3 {
+	background-color: green;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes bthree {
+	0% {}
+	100% {width: 200px;
+		height: 200px;}
+}
+
+.box3-animate {
+	animation: bthree 3s alternate infinite;
+}
+
+#box4 {
+	background-color: purple;
+}
+
+.box4-animate {
+	animation: bfour 5s infinite;
+}
+
+@keyframes bfour {
+	0% {transform: rotate(0deg);}
+	100% {transform: rotate(360deg);}
+}
